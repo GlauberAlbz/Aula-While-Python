@@ -8,4 +8,60 @@
       peça a digitação novamente até ter um valor correto
 '''
 
+from colorama import init, Fore, Back, Style
+import os
+import time
 
+init()
+os.system('cls')
+
+
+print(Fore.CYAN + "===========================================")
+print(Fore.CYAN + "||                                       ||")
+print(Fore.CYAN + "||    " + Fore.YELLOW + "BEM-VINDO AO PROGRAMA DE SEXO" + Fore.CYAN + "      ||")
+print(Fore.CYAN + "||                                       ||")
+print(Fore.CYAN + "===========================================")
+print(Style.RESET_ALL)
+time.sleep(1)
+
+print(Fore.GREEN + "Este programa irá pedir para você inserir seu sexo." + Style.RESET_ALL)
+time.sleep(1)
+input(Fore.YELLOW + "Pressione ENTER para continuar..." + Style.RESET_ALL)
+
+os.system('cls')
+
+sexo = str(input("Qual o seu sexo? (" + Fore.BLUE + "M" + Style.RESET_ALL + "/" + Fore.MAGENTA + "F" + Style.RESET_ALL + ") ")).upper().strip()
+
+os.system('cls')
+
+while sexo != 'M' and sexo != 'F':
+    print(Fore.RED + "\nErro! Por favor, digite M ou F para continuar.\n" + Style.RESET_ALL)
+    sexo = str(input("Qual o seu sexo? (" + Fore.BLUE + "M" + Style.RESET_ALL + "/" + Fore.MAGENTA + "F" + Style.RESET_ALL + ") ")).upper().strip()
+    os.system('cls')
+    time.sleep(0.25)
+
+os.system('cls')
+
+frase1 = "Seu sexo é:"
+
+for letras in frase1:
+    print(letras, end='', flush=True)
+    time.sleep(0.1)
+
+time.sleep(0.5)
+
+os.system('cls')
+
+for c in range(0, 7):
+    for c in range(0, 3):
+        print('.', end='', flush=True)
+        time.sleep(0.15)
+    os.system('cls')
+
+if sexo == 'M':
+    print(Fore.BLUE + "Masculino!")
+else:
+    print(Fore.MAGENTA + "Feminino!")
+
+print(Style.RESET_ALL)
+time.sleep(2)
