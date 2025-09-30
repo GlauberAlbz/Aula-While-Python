@@ -16,11 +16,11 @@ init()
 os.system('cls')
 
 
-print(Fore.CYAN + "===========================================")
-print(Fore.CYAN + "||                                       ||")
-print(Fore.CYAN + "||    " + Fore.YELLOW + "BEM-VINDO AO PROGRAMA DE SEXO" + Fore.CYAN + "      ||")
-print(Fore.CYAN + "||                                       ||")
-print(Fore.CYAN + "===========================================")
+print(Fore.CYAN + "======================================================")
+print(Fore.CYAN + "||                                                  ||")
+print(Fore.CYAN + "||    " + Fore.YELLOW + "BEM-VINDO AO PROGRAMA VERIFICADOR DE SEXO" + Fore.CYAN + "     ||")
+print(Fore.CYAN + "||                                                  ||")
+print(Fore.CYAN + "======================================================")
 print(Style.RESET_ALL)
 time.sleep(1)
 
